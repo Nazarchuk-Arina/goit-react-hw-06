@@ -14,7 +14,7 @@ const ContactForm = () => {
       addContact({
         id: nanoid(),
         name: values.name,
-        number: values.number,
+        tel: values.tel,
       })
     );
     resetForm();
@@ -26,7 +26,7 @@ const ContactForm = () => {
   });
 
   const nameFieldId = useId();
-  const numberFieldId = useId();
+  const telFieldId = useId();
 
   return (
     <div className={s.wrapper}>
@@ -43,7 +43,7 @@ const ContactForm = () => {
           </label>
           <label className={s.label}>
             <span>Number</span>
-            <Field name="tel" className={s.input} id={numberFieldId} />
+            <Field name="tel" className={s.input} id={telFieldId} />
             <ErrorMessage name="tel" component="span" className={s.error} />
           </label>
           <button className={s.btn} type="submit">

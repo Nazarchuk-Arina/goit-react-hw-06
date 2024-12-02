@@ -18,7 +18,7 @@ const Contact = ({ contact }) => {
         </div>
         <div className={s.contact__number}>
           <FaPhone />
-          <p>{contact.number}</p>
+          <p>{contact.tel}</p>
         </div>
       </div>
       <button className={s.contact__btn} onClick={handleDelete}>
