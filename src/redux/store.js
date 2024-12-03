@@ -11,8 +11,8 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import { filtersReducer } from "./filtersSlice";
-import { contactsReducer } from "./contactsSlice";
+import { filtersReducer } from "../redux/filtersSlice";
+import { contactsReducer } from "../redux/contactsSlice";
 
 const usersConfig = {
   key: "contacts",
